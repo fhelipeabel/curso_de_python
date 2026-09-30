@@ -1,15 +1,12 @@
 # Sorteando um item na lista
-import random
-opcoes = []
+from random import choice
 
-nome = input("\nDigite o primeiro nome: ")
-opcoes.append(nome)
-nome = input("Digite o segundo nome: ")
-opcoes.append(nome)
-nome = input("Digite o terceiro nome: ")
-opcoes.append(nome)
-nome = input("Digite o quarto nome: ")
+n1 = input("\nPrimeiro aluno: ")
+n2 = input("Segundo aluno: ")
+n3 = input("Terceiro aluno: ")
+n4 = input("Quarto aluno: ")
+opcoes = [n1, n2, n3, n4]
 
-sorteado = random.choice(opcoes)
+sorteado = choice(opcoes)
 
 print("Quem foi escolhido para limpar o quadro hoje foi {}.".format(sorteado))

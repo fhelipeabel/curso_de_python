@@ -1,8 +1,8 @@
 # Sorteando uma ordem na lista
-import random
+from random import shuffle
 
 lista = ["Fhel", "Mari", "Math", "Kimb"]
-random.shuffle(lista)
+shuffle(lista)
 
 print("\nA ordem para apresentar os trabalhos será a seguinte:")
 

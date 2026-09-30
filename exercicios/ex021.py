@@ -4,7 +4,7 @@ import os
 
 pasta_do_script = os.path.dirname(os.path.abspath(__file__))
 
-caminho_da_musica = os.path.join(pasta_do_script, "music.mp3")
+caminho_da_musica = os.path.join(pasta_do_script, "ex021.mp3")
 
 pygame.init()
 pygame.mixer.init()
