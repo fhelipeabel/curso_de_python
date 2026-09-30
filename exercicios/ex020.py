@@ -1,5 +1,4 @@
 # Sorteando uma ordem na lista
-
 import random
 
 lista = ["Fhel", "Mari", "Math", "Kimb"]

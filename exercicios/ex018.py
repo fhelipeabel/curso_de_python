@@ -1,5 +1,4 @@
 # Seno, Cosseno e Tangente
-
 import math
 
 def calcular(angulo):
