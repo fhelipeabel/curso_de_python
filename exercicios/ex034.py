@@ -7,4 +7,4 @@ if sal >= 2500:
 else:
     aumento = 15
 
-print("Seu salário de R${} aumentará em {}% e passará a ser R${:.2f}".format(sal, aumento, sal * (1+(aumento/100))))
+print("Seu salário de R${} aumentará em {}% e passará a ser R${:.2f}".format(sal, aumento, sal + ((sal * aumento) / 100)))
