@@ -9,4 +9,4 @@ opcoes = [n1, n2, n3, n4]
 
 sorteado = choice(opcoes)
 
-print("Quem foi escolhido para limpar o quadro hoje foi {}.".format(sorteado))
+print("Quem foi escolhido para limpar o quadro hoje foi \33[1;33m{}\33[m.".format(sorteado))

@@ -5,4 +5,4 @@ aumento = float(input("Digite quantos % aumentou: "))
 
 novo_salario = salario * (100 + aumento) / 100
 
-print("Seu novo salário é de R$ {}. Parabéns pelo aumento!".format(novo_salario))
+print("Seu novo salário é de R$ \33[1;33m{}\33[m. Parabéns pelo aumento!".format(novo_salario))

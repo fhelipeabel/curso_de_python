@@ -6,5 +6,5 @@ largura = int(input("Digite a altura da parede: "))
 area = altura * largura
 tinta = 2
 
-print("A área total da parede é de {}.".format(area))
-print("Você precisará de {} latas de tinta para pintá-la completamente.".format(area/tinta))
+print("A área total da parede é de \33[1;33m{}\33[m.".format(area))
+print("Você precisará de \33[1;33m{}\33[m latas de tinta para pintá-la completamente.".format(area/tinta))

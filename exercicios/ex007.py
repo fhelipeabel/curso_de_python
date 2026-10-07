@@ -14,6 +14,6 @@ while True:
         notas.append(nota)
 
 media = sum(notas) / len(notas)
-print("A sua média das notas é {}.".format(media))
+print("A sua média das notas é \33[1;33m{}\33[m.".format(media))
 
 # Fiz melhor e ainda coloquei um while True, para ao invés de pedir apenas duas notas, pedir quantas o aluno quiser escrever, com um parâmetro de parada que é o "0".

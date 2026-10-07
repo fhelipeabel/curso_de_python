@@ -1,4 +1,5 @@
 # Tocando um mp3
+# pyrefly: ignore [missing-import]
 import pygame
 import os
 
@@ -12,6 +13,6 @@ pygame.mixer.init()
 pygame.mixer.music.load(caminho_da_musica)
 pygame.mixer.music.play()
 
-print("Tocando música... Pressione Ctrl+C no terminal para parar.")
+print("\33[1;33mTocando música... Pressione Ctrl+C no terminal para parar.\33[m")
 while pygame.mixer.music.get_busy():
     pygame.time.Clock().tick(10)

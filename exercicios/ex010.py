@@ -12,5 +12,5 @@ def converter(a, b):
     conversao = a * b
     return conversao
 
-print("O dolar no dia da aula custava R$ {}.".format(converter(carteira, dolar_antes)))
-print("O dolar hoje custa R$ {}.".format(converter(carteira, dolar_hoje)))
+print("O dolar no dia da aula custava R$ \33[1;33m{}\33[m.".format(converter(carteira, dolar_antes)))
+print("O dolar hoje custa R$ \33[1;33m{}\33[m.".format(converter(carteira, dolar_hoje)))

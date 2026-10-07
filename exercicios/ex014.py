@@ -2,4 +2,4 @@
 
 c = float(input("Digite a temperatura em °C: "))
 
-print("A temperatura convertida é {} °F".format(c * 1.8 + 32))
+print("A temperatura convertida é \33[1;33m{}\33[m °F".format(c * 1.8 + 32))
