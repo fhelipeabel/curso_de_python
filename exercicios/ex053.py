@@ -1,8 +1,10 @@
 texto = str(input("Digite o texto: "))
 
-inverso = texto[::-1].lower().replace(" ", "")
+inverso = texto[::-1].upper().replace(" ", "")
 
-if texto.lower().replace(" ", "") == inverso:
+print(f"O texto {texto.replace(" ", "").upper()}, ao contrário fica: {inverso}")
+
+if texto.upper().replace(" ", "") == inverso:
     print("Este texto é um palíndromo!")
 else:
     print("Não é...")
