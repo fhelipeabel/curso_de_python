@@ -4,7 +4,6 @@ maior_idade = 0
 qtd_mulheres_jovens = 0
 soma_idade = 0
 
-
 for c in range(1, 5):
     nome = input(f"\nDigite o {c}º nome: ")
     idade = int(input(f"Digite a idade de {nome}: "))
@@ -21,7 +20,6 @@ for c in range(1, 5):
         if idade < 20:
             qtd_mulheres_jovens += 1
 
-
 print(f"\nA média de idade do grupo é {soma_idade / 4:.0f} anos.")
 print(f"O homem mais velho é o {homem_mais_velho}, com {maior_idade} anos.")
-print(f"O total de mulheres com menos de 20 anos é {qtd_mulheres_jovens}.")
+print(f"O total de mulheres com menos de 20 anos é {qtd_mulheres_jovens}.") 
