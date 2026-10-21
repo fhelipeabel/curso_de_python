@@ -17,7 +17,7 @@ while n != 5:
     if 6 > n > 0:
 
         if n == 1:
-            print(f"A soma de {primeiro} com {segundo} dá {primeiro + segundo}")
+            print(f"A soma de  {primeiro} com {segundo} dá {primeiro + segundo}")
 
         elif n == 2:
             print(f"O número {primeiro} x {segundo} dá {primeiro * segundo}")
