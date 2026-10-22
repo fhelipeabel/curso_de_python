@@ -5,11 +5,9 @@ razao = int(input("Razão: "))
 cont = 1
 termo = primeiro
 
-print(termo, end=" → ")
-
-while cont < 10:
+while cont <= 10:
+    print(termo, end=" → ")
     termo += razao
     cont += 1
-    print(termo, end= " → ")
 
 print("FIM")

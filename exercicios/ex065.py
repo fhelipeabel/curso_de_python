@@ -1,13 +1,16 @@
 # Maior e menor valores
 
 continuar = ""
-i = 0
-soma = 0
+i = soma = 0
 maior = None
 menor = None
 
 while continuar.upper() != "N":
     n = int(input("Digite um número: "))
+
+    i += 1
+    soma += n
+
     if menor is None:
         maior = n
         menor = n
@@ -17,14 +20,9 @@ while continuar.upper() != "N":
         elif n < menor:
             menor = n
 
-    i += 1
-    soma += n
     continuar = input("Você deseja continuar (S/N)? ")
-    if continuar.upper() == "N":
-        print("Encerrando...")
-        break
 
 print(f"\nQuantidade de números digitados: {i}")
-print(f"Média dos valores: {soma / i:.0f}")
+print(f"Média dos valores: {soma / i:.2f}")
 print(f"O maior valor digitado foi o {maior}.")
 print(f"O menor valor digitado foi o {menor}.")
