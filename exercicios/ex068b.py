@@ -24,4 +24,4 @@ while usuario_ganhou:
         print("Você perdeu.")
         usuario_ganhou = False
 
-print("Vitórias consecutivas: ")
+print(f"Vitórias consecutivas: {vitorias}")
