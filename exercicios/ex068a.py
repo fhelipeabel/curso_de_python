@@ -15,7 +15,6 @@ while usuario_ganhou:
     
     numero_usuario = int(input("Digite um número (1 a 10): "))
     numero_computador = randint(0, 10)
-
     soma = numero_usuario + numero_computador
     resto_divisao = soma % 2
 
