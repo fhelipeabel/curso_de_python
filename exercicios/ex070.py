@@ -6,23 +6,19 @@ menor_preco = None
 total_gasto = maior_de_mil = 0
 
 while seguir:
-    nome = input("Nome do produto: ")
+    produto = input("Nome do produto: ")
     preco = float(input("Preço: "))
 
-    if menor_preco is None:
+    if total_gasto == 0 or preco < menor_preco:
         menor_preco = preco
-        produto_mais_barato = nome
-    else:
-        if preco < menor_preco:
-            menor_preco = preco
-            produto_mais_barato = nome
+        produto_mais_barato = produto
 
     if preco >= 1000:
         maior_de_mil += 1
 
     total_gasto += preco
 
-    continuar = ""
+    continuar = " "
     while continuar not in ["S", "N"]:
         continuar = input("Deseja continuar? [S/N] ").strip().upper()
 
