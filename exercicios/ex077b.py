@@ -1,6 +1,8 @@
 # Contando vogais em Tupla
 
-palavras = ("aprender", "programar", "linguagem", "python", "curso", "gratis", "estudar", "praticar", "trabalhar", "mercado", "programador", "futuro")
+palavras = ("aprender", "programar", "linguagem", "python",
+            "curso", "gratis", "estudar", "praticar",
+            "trabalhar", "mercado", "programador", "futuro")
 
 for p in palavras:
     print(f"\nNa palavra \33[34m{p.upper()}\33[m temos", end=" ")
