@@ -6,5 +6,5 @@ menor = 0
 
 for i in range(0, 5):
     n = int(input("Digite um valor: "))
-    for item in lista:
-        if n > maior:
+    for item in range(0, len(lista)):
+        
