@@ -4,25 +4,16 @@ lista = []
 
 for i in range(0, 5):
     n = int(input("Digite um valor: "))
-    if len(lista) == 0:
+    if i == 0 or n > lista[-1]:
         lista.append(n)
         print(f"Primeiro número adicionado à lista na posição {lista.index(n)}")
         print(lista)
     else:
-        if n > max(lista):
-            lista.append(n)
-            print(f"Adicionado ao final da lista...")
-            print(lista)
-        elif n < min(lista):
-            lista.insert(0, n)
-            print(f"Adicionado na posição {lista.index(n)} da lista...")
-            print(lista)
-        elif min(lista) < n < max(lista):
-            for item in lista:
-                if n < item:
-                    lista.insert(lista.index(item), n)
-                    print(f"Adicionado na posição {lista.index(n)} da lista...")
-                    print(lista)
-                    break
+        pos = 0
+        while pos < len(lista):
+            if n <= lista[pos]:
+                lista.insert(pos, n)
+                break
+            pos += 1
 
 print(f"\nOs valores digitados em ordem foram {lista}")
