@@ -2,25 +2,25 @@
 ficha = list()
 cont = 0
 while True:
-    ficha.append([])
-    ficha[cont].append(str(input("Nome: ")))
-    ficha[cont].append([])
-    ficha[cont][1].append(float(input("Nota 1: ")))
-    ficha[cont][1].append(float(input("Nota 2: ")))
-    print(ficha)
-    cont+=1
-
+    nome = str(input("Nome: "))
+    nota1 = float(input("Nota 1: "))
+    nota2 = float(input("Nota 2: "))
+    media = (nota1 + nota2) / 2
+    ficha.append([nome, [nota1, nota2], media])
     continuar = input("Quer continuar? [S/N] ").upper()
     if continuar == "N":
         break
 
-print(f"-"*20)
-print("Nº", end="  ")
-print("NOME", end=" ")
-print(f"{"MÉDIA":^15}")
-print(f"-"*20)
-for pos, aluno in enumerate(ficha, 1):
-    media = (aluno[1][0] + aluno[1][1]) / 2
-    print(f"{pos}   {aluno[0]:<10}{media:.2f}")
-print(f"-"*20)
-qual = input("Mostrar as notas de qual aluno? (999 interrompe): ")
+print(f"-"*30)
+print(f"{"Nº":<4}{"NOME":<10}{"MÉDIA":>8}")
+print(f"-"*26)
+for pos, aluno in enumerate(ficha):
+    print(f"{pos:<4}{aluno[0]:<10}{aluno[2]:>8.1f}")
+while True:
+    print(f"-"*35)
+    qual = int(input("Mostrar as notas de qual aluno? (999 interrompe): "))
+    if qual == 999:
+        print("Finalizando...")
+        break
+    if qual <= len(ficha) - 1:
+        print(f"Notas de {ficha[qual][0]} são {ficha[qual][1]}")
