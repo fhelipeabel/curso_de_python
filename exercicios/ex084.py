@@ -1,6 +1,9 @@
 # Lista composta e análise de dados
 p = list()
 pessoas = list()
+maior_peso = menor_peso = 0
+mais_pesados = list()
+menos_pesados = list()
 while True:
     p.append(str(input("Nome: ")))
     p.append(float(input("Peso: ")))
@@ -9,9 +12,6 @@ while True:
     continuar = input("Quer continuar? [S/N]: ").upper()
     if continuar in "N":
         break
-maior_peso = menor_peso = 0
-mais_pesados = list()
-menos_pesados = list()
 for p in pessoas:
     if maior_peso == 0:
         maior_peso = menor_peso = p[1]

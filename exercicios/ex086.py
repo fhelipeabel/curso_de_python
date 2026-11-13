@@ -6,5 +6,5 @@ for linha in matriz:
 
 for linha in matriz:
     for cel in linha:
-        print(f"[ {cel} ]", end=" ")
-    print("")
+        print(f"[{cel:^5}]", end=" ")
+    print()

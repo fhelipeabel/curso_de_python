@@ -12,7 +12,7 @@ for linha in matriz:
             soma_pares += cel
         if linha.index(cel) == 2:
             soma_terceira_col += cel
-    print("")
+    print()
 print("-="*30)
 print(f"A soma de todos os valores pares é {soma_pares}.")
 print(f"A soma dos valores da terceira coluna é {soma_terceira_col}.")
