@@ -24,4 +24,12 @@ for i, jogador in enumerate(jogadores):
     print(f"{jogador["Nome"]:<11}", end="")
     print(f"{str(jogador["Gols"]):<16}", end="")
     print(f"{jogador["Total"]:<25}")
-choice = 
+while True:
+    print("-"*40)
+    escolha = int(input("Mostrar dados de qual jogador? "))
+    if escolha >= len(jogadores):
+        print(f"ERRO! Não existe jogador com código {escolha}! Tente novamente.")
+    else:
+        print(f"-- LEVANTAMENTO DO JOGADOR {jogadores[escolha]["Nome"]}:")
+        for i, p in enumerate(jogadores[escolha]["Gols"], 1):
+            print(f"No jogo {i}, fez {p} gols.")
