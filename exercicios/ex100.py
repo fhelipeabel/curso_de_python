@@ -1,28 +1,23 @@
 # Funções para sortear e somar
-from random import sample
+from random import randint
 from time import sleep
-numeros = []
 
-
-def sorteia(listsort):
-    listsort = list(sample(range(0,10),5))
+def sorteia(lista):
     print(f"Sorteando 5 valores:", end=" ")
-    for n in listsort:
-        print(n, end=" ", flush=True)
+    for i in range(0, 5):
+        n = randint(0, 10)
+        lista.append(n)
+        print(f"{n} ", end=" ", flush=True)
         sleep(0.3)
     print("PRONTO!")
-    return listsort
 
-
-def somaPar(r):
+def somaPar(lista):
     soma = 0
-    epar = []
-    for n in r:
-        if n % 2 == 0:
-            soma += n
-            epar.append(n)
-    print(f"A soma dos valores pares digitados {epar} é {soma}.")
+    for valor in lista:
+        if valor % 2 == 0:
+            soma += valor
+    print(f"A soma dos valores pares digitados é {soma}.")
 
-
-result = sorteia(numeros)
-somaPar(result)
+numeros = list()
+sorteia(numeros)
+somaPar(numeros)
