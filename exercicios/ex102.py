@@ -7,14 +7,15 @@ def fatorial(num, show=False):
     """
     tot = 1
     for c in range(num, 0, -1):
+        if show:
+            print(c, end="")
+            if c > 1:
+                print(" x ", end="")
+            else:
+                print(" = ", end="")
         tot *= c
-    print()
-    if show:
-        for c in range(num, 1, -1):
-            print(f"{c} x", end=" ")
-        print(f"1 = ", end="")
-        return tot
     return tot
 
 # Programa principal
-print(fatorial(5, True))
+print(fatorial(5, False))
+help(fatorial)
